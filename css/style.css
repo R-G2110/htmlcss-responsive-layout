@@ -99,6 +99,7 @@ header .row .hamburger {
 /* MAIN */
 .intro {
   padding-top: 130px;
+  padding-bottom: 80px;
 }
 .intro .row {
   flex-wrap: wrap;
@@ -127,6 +128,10 @@ header .row .hamburger {
 .intro .col i {
   font-size: 70px;
   padding: 20px 0;
+}
+
+.planning img {
+  padding: 50px;
 }
 
 .benefits .row {
