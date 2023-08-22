@@ -31,6 +31,10 @@ body {
   margin: 0 auto;
 }
 
+img {
+  width: 100%;
+}
+
 /* Header */
 header {
   width: 100%;
@@ -46,18 +50,21 @@ header .top-bar {
 }
 
 header .row {
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   height: 100%;
 }
 
 header .row .logo {
-  padding: 25px 5px;
+  padding: 0 5px;
+}
+
+header .row .logo img{
+  width: 80px;
 }
 
 header .row .menu {
   display: none;
-  
 }
 
 header .row .menu ul li{
@@ -83,13 +90,16 @@ header .row .menu .btn {
 header .row .hamburger {
   display: flex;
   justify-content: flex-end;
-  padding: 20px 5px;
+  padding: 0 5px;
   font-size: 2.5rem;
   color: white;
 
 }
 
 /* MAIN */
+.intro {
+  padding-top: 130px;
+}
 .intro .row {
   flex-wrap: wrap;
 }
@@ -100,6 +110,23 @@ header .row .hamburger {
 .benefits .row,
 .about .row {
   flex-direction: column;
+}
+
+.intro .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #5A6E7F;
+}
+
+.intro .col h3,
+.intro .col i {
+  color: #0084FD;
+}
+
+.intro .col i {
+  font-size: 70px;
+  padding: 20px 0;
 }
 
 .benefits .row {
