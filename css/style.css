@@ -11,6 +11,10 @@
   display: flex;
 }
 
+.column {
+  flex-direction: column;
+}
+
 .debug {
   background-color: rgba(0, 255, 0, 0.2);
   min-height: 50px;
@@ -40,4 +44,12 @@ header #top-bar div{
   justify-content: space-between;
   align-items: center;
   height: 100%;
+}
+
+/* Main */
+
+main .row .big-card,
+main .row .small-card {
+  justify-content: center;
+  width: 100%;
 }
