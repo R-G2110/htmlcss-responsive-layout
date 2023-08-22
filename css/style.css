@@ -153,6 +153,11 @@ header .row .hamburger {
 } 
 
 
+.benefits .top {
+  padding: 80px;
+  text-align: center;
+}
+
 .benefits .row {
   flex-wrap: wrap;
 }
