@@ -7,13 +7,6 @@
 }
 
 /* UTILITIES */
-.flex {
-  display: flex;
-}
-
-.column {
-  flex-direction: column;
-}
 
 .debug {
   background-color: rgba(0, 255, 0, 0.2);
@@ -21,35 +14,42 @@
   border: 1px solid black;
 }
 
+.row {
+  display: flex;
+}
+
+.col {
+  width: 100%;
+}
+
+
 .container {
-  width: 90%;
-  max-width: 576px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
-.small-card,
-.big-card {
-  margin: 25px auto;
-}
-
 /* Header */
-
-header #top-bar {
-  width: 100%;
-  height: 75px;
-  margin-bottom: 50px;
-}
-
-header #top-bar div{
+header .row {
   justify-content: space-between;
-  align-items: center;
-  height: 100%;
 }
 
-/* Main */
+header .row .menu {
+  display: none;
+}
 
-main .row .big-card,
-main .row .small-card {
-  justify-content: center;
-  width: 100%;
+/* MAIN */
+.intro .row {
+  flex-wrap: wrap;
+}
+
+.intro .col:first-child .row,
+.planning .row,
+.testimonials .row,
+.benefits .row,
+.about .row {
+  flex-direction: column;
+}
+
+.benefits .row {
+  flex-wrap: wrap;
 }

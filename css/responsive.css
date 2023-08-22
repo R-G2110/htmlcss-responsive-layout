@@ -1,0 +1,48 @@
+
+@media screen and (min-width:768px) {
+
+  header .row .menu {
+      display: block;
+  }
+
+  header .row .hamburger {
+      display: none;
+  }
+
+  .intro .col {
+      width: calc(100% / 3);
+  }
+  
+  .intro .col:first-child {
+      width: 66.6666%;
+  }
+
+  .planning .row,
+  .benefits .row,
+  .about .row,
+  .testimonials .row {
+      flex-direction: row;
+  }
+
+  .testimonials .row .col:first-child {
+      width: 220px;
+  }
+
+  .benefits .col {
+      width: 50%;
+  }
+
+  .about .col:last-child {
+      width: 250px;
+  }
+
+}
+
+@media screen and (min-width:992px) {
+  .intro .col:first-child .row{
+      flex-direction: row;
+  }
+  .benefits .col{
+      width: calc(100% / 3);
+  }
+}
