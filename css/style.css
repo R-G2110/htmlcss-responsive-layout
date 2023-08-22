@@ -153,11 +153,34 @@ header .row .hamburger {
 } 
 
 
-.benefits .top {
+.benefits {
   padding: 80px;
+}
+
+.benefits .top {
+  padding-bottom: 80px;
   text-align: center;
 }
 
 .benefits .row {
   flex-wrap: wrap;
+}
+
+.about .col img {
+  border-radius: 50%;
+}
+
+.about .col h1,
+.about .col h2 {
+  color: #9792E4;
+}
+
+.about .col .btn {
+  margin: 10px 0;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: white;
+  background-color: #9792E4;
+  font-weight: 500;
 }
