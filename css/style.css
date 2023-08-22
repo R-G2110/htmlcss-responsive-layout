@@ -134,6 +134,25 @@ header .row .hamburger {
   padding: 50px;
 }
 
+.testimonials .container .top {
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* .testimonials .card .col:first-child{
+  display: flex;
+} */
+
+.testimonials .card img{
+  margin: 0 15px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  text-align: center;
+} 
+
+
 .benefits .row {
   flex-wrap: wrap;
 }
