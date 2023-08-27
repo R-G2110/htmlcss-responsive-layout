@@ -111,6 +111,15 @@ footer {
 }
 .intro .row {
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.intro .col {
+  padding: 20px;
+  margin: 0 0 15px 0;
+  border-radius: 20px;
+  background-color: #B5DDFF;
 }
 
 .intro .col:first-child .row,
@@ -121,26 +130,48 @@ footer {
   flex-direction: column;
 }
 
-.intro .col {
+.intro .intro-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #5A6E7F;
+  flex-basis: 32.5%
 }
 
-.intro .col h3,
-.intro .col i {
+.intro .col h2{
+  color: #0084FD;
+  margin-bottom: 10px;
+}
+
+.intro .col span {
+  font-size: 70px;
+  padding: 20px 0;
   color: #0084FD;
 }
 
-.intro .col i {
-  font-size: 70px;
-  padding: 20px 0;
+.intro .btn {
+  border: none;
+  margin: 20px 0;
+  padding: 10px 80px;
+  border-radius: 20px;
+  background: #0084FD;
+  color: white;
+  font-weight: 700;
 }
 
-.planning img {
-  padding: 50px;
+.planning {
+  background-color: #9792E4;
 }
+
+.planning .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 100px;
+  text-align: center;
+}
+
+
 
 .testimonials .container .top {
   padding: 50px 0;
@@ -156,6 +187,40 @@ footer {
   text-align: center;
 } 
 
+.testimonials .card {
+  padding: 20px 0;
+  margin-bottom: 25px;
+  border-radius: 30px;
+  background-color: #9792E4;
+  color: white;
+}
+
+.testimonials .card .col:nth-of-type(2) {
+  padding: 20px;
+
+}
+
+
+.testimonials .card p::before {
+  content: "\201C";
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.testimonials .card p::after {
+  content: "\201D";
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.benefits {
+  background-color: #9792E4;
+}
+
+.testimonials .card h4 {
+  margin-top: 20px;
+}
+
 .benefits .top {
   padding-bottom: 80px;
   text-align: center;
@@ -163,17 +228,64 @@ footer {
 
 .benefits .row {
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.benefits .col {
+  flex-basis: 32%;
+  padding: 50px 30px 30px 30px;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  color: #737373;
+  background-color: white;
+}
+
+.benefits .col h2 {
+  font-size: 45px;
+}
+
+.benefits .col h2,
+.benefits .col h4 {
+  color: #9792E4;
+  margin-bottom: 10px;
+}
+
+
+.benefits .btn {
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 30px;
+  color: white;
+  font-weight: 600;
+  background: #9792E4;
+  margin: 20px 0;
+}
+
+.about .col:first-child {
+  padding: 50px;
+}
+
+.about .col:last-child {
+  padding: 30px 10px 10px;
 }
 
 .about .col img {
   border-radius: 50%;
 }
 
+.about .col h1{
+  font-size: 50px;
+}
+
 .about .col h1,
 .about .col h2 {
   color: #9792E4;
+  margin-bottom: 30px;
 }
 
+.about .col p {
+  margin-bottom: 40px;
+}
 .about .col .btn {
   margin: 10px 0;
   border: none;
@@ -184,10 +296,27 @@ footer {
   font-weight: 500;
 }
 
+.getstarted {
+  background-color: #9792E4;
+  color: white;
+  padding: 60px 0;
+}
+
 .getstarted .container {
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.getstarted .container h2 {
+  font-size: 30px;
+}
+
+.getstarted .container h1 {
+  font-size: 55px;
+  margin: 20px 0;
+  color: #FDC15F;
 }
 
 .getstarted .container .btn {
@@ -200,10 +329,25 @@ footer {
   color: #9792E4;
 }
 
+.getstarted .container a {
+  color: white;
+}
+
+footer {
+  background-color: #333333;
+  color: white;
+}
+
 footer .container {
+  width: 45%;
   height: 220px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
+}
+
+footer .container a {
+  color: #9792E4;
 }
